@@ -51,7 +51,7 @@ $(document).ready(function () {
             }
 
             $([document.documentElement, document.body]).animate({
-                scrollTop: $("#section" + currSection.toString()).offset().top - $("#section" + currSection.toString()).height()
+                scrollTop: $("#section" + currSection.toString()).offset().top - $("#section" + currSection.toString()).height() / 4
             }, 200);
         }
     );
