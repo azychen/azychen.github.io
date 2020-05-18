@@ -46,18 +46,13 @@ $(document).ready(function () {
 
             if (e.keyCode == 37 || e.keyCode == 38) {
                 decr();
-                $([document.documentElement, document.body]).animate({
-                    scrollTop: $("#section" + currSection.toString()).offset().top
-                }, 200);
-            }
-
-            if (e.keyCode == 39 || e.keyCode == 40) {
+            } else if (e.keyCode == 39 || e.keyCode == 40) {
                 incr();
-                $([document.documentElement, document.body]).animate({
-                    scrollTop: $("#section" + currSection.toString()).offset().top
-                }, 200);
             }
 
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#section" + currSection.toString()).offset().top - $("#section" + currSection.toString()).height()
+            }, 200);
         }
     );
 });
