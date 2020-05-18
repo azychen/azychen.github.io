@@ -1,18 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-/* backgrounds */
-
-/* .red-back {
-    background-color: #f45;
-    color: #282c34;
-}
-
-.grey-back {
-    background-color: #282c34;
-    color: #f3f4f5;
-    margin: 0em;
-} */
-
-
 
 
 html {
@@ -25,7 +11,7 @@ html {
 
 body {
     margin: 0;
-    font-family: Inter, sans-serif;
+    font-family: "Inter", sans-serif;
     background: #11151F;
 }
 
@@ -41,6 +27,7 @@ p {
     z-index: 10;
     font-size: 1.5rem;
     margin: 0 1.25rem 5rem 1.25rem;
+    font-weight: 600;
 }
 
 footer {
@@ -127,7 +114,6 @@ a:hover {
 }
 
 .grey-back {
-    /* background: #282c34; */
     color: #f3f4f5;
 }
 
@@ -185,8 +171,12 @@ a:hover {
     background-image: url(../assets/img/blob-b.svg);
 }
 
-/* .blob-text-g {
-} */
+.blob-text-g {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 20%;
+    background-image: url(../assets/img/blob-g.svg);
+}
 
 .blob-text-p {
     background-repeat: no-repeat;
@@ -195,11 +185,25 @@ a:hover {
     background-image: url(../assets/img/blob-p.svg);
 }
 
-.blob-text-gr {
+.blob-text-gr1 {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 80%;
-    background-image: url(../assets/img/blob-gr.svg);
+    background-image: url(../assets/img/blob-gr1.svg);
+}
+
+.blob-text-gr2 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 30%;
+    background-image: url(../assets/img/blob-gr2.svg);
+}
+
+.blob-text-gr3 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 65%;
+    background-image: url(../assets/img/blob-gr3.svg);
 }
 
 .avatar {
@@ -245,3 +249,90 @@ a:hover {
     display: block;
 }
 
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #21252F;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+#welcome-message {
+    margin-top: 3em;
+}
+
+/* logos */
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+
+.logo {
+    width: 20%;
+    padding: -1px;
+    margin: 4px;
+    left: 0em;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: background 0.2s ease-in-out;
+}
+
+.logo>a {
+    padding: 1.5rem;
+}
+
+.logo-fb {
+    background-image: url(../assets/img/logo-fb.svg);
+}
+
+.logo-fb:hover {
+    background-image: url(../assets/img/logo-fb-h.svg);
+}
+
+.logo-ig {
+    background-image: url(../assets/img/logo-ig.svg);
+}
+
+.logo-ig:hover {
+    background-image: url(../assets/img/logo-ig-h.svg);
+}
+
+.logo-li {
+    background-image: url(../assets/img/logo-li.svg);
+}
+
+.logo-li:hover {
+    background-image: url(../assets/img/logo-li-h.svg);
+}
+
+.logo-gh {
+    background-image: url(../assets/img/logo-gh.svg);
+}
+
+.logo-gh:hover {
+    background-image: url(../assets/img/logo-gh-h.svg);
+}
+
+/* Clear floats after image containers */
+
+#logos::after {
+    content: "";
+    clear: both;
+    display: table;
+    align-self: center;
+}
+
+#logos {
+    position: absolute;
+    align-self: center;
+    right: 1%;
+}

@@ -3,21 +3,21 @@ $(document).ready(function () {
     var currSection = 0;
     var maxSection;
 
-    // avatar notification
-    $(".avatar").on("click", function () {
-        let phrases = ["Ow!", "Stop that!", "C'mon man, that hurts!"];
-        alert(phrases[Math.floor(Math.random() * 2.99)]);
-    });
+    // // avatar notification
+    // $(".avatar").on("click", function () {
+    //     let phrases = ["Ow!", "Stop that!", "C'mon man, that hurts!"];
+    //     alert(phrases[Math.floor(Math.random() * 2.99)]);
+    // });
 
-    // dropdown menu
-    $('[data-trigger="dropdown"]').on('mouseenter', function () {
-        var submenu = $(this).parent().find('.submenu');
-        submenu.fadeIn(300);
+    // // dropdown menu
+    // $('[data-trigger="dropdown"]').on('mouseenter', function () {
+    //     var submenu = $(this).parent().find('.submenu');
+    //     submenu.fadeIn(300);
 
-        $('.profile-menu').on('mouseleave', function () {
-            submenu.fadeOut(300);
-        });
-    });
+    //     $('.profile-menu').on('mouseleave', function () {
+    //         submenu.fadeOut(300);
+    //     });
+    // });
 
     $(document).keydown(
         function (e) {
