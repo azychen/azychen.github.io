@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
     var currSection = 0;
+    var maxSection;
 
     // avatar notification
     $(".avatar").on("click", function () {
@@ -18,7 +19,6 @@ $(document).ready(function () {
         });
     });
 
-
     $(document).keydown(
         function (e) {
 
@@ -27,11 +27,11 @@ $(document).ready(function () {
                 while ($("#section" + i.toString()).length !== 0) {
                     i++;
                 }
-                return i;
+                maxSection = i;
             }
 
             function incr() {
-                if (currSection < getMaxSection()) {
+                if (currSection < maxSection) {
                     currSection++;
                 }
             }
@@ -42,6 +42,7 @@ $(document).ready(function () {
                 }
             }
 
+            getMaxSection();
 
             if (e.keyCode == 37 || e.keyCode == 38) {
                 decr();
@@ -56,10 +57,7 @@ $(document).ready(function () {
                     scrollTop: $("#section" + currSection.toString()).offset().top
                 }, 200);
             }
-            
+
         }
     );
-
-
-
 });

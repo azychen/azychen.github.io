@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-
-
 /* backgrounds */
 
 /* .red-back {
@@ -14,11 +12,14 @@
     margin: 0em;
 } */
 
+
+
+
 html {
     box-sizing: border-box;
 }
 
-*,*::before,*::after {
+*, *::before, *::after {
     box-sizing: inherit;
 }
 
@@ -34,20 +35,18 @@ h1 {
     z-index: 10;
     font-size: 5rem;
     margin: 5rem 1.25rem 2.5rem 1.25rem;
-
 }
+
 p {
     z-index: 10;
     font-size: 1.5rem;
     margin: 0 1.25rem 5rem 1.25rem;
-
 }
 
 footer {
     margin: 0 1.25rem 2rem 1.25rem;
     text-align: center;
 }
-
 
 a {
     text-decoration: none;
@@ -64,17 +63,17 @@ a:hover {
 
 @keyframes animateWave {
     0% {
-        transform: scale(1,0);
+        transform: scale(1, 0);
     }
     100% {
-        transform: scale(1,1);
+        transform: scale(1, 1);
     }
 }
-.wave-container > svg {
+
+.wave-container>svg {
     display: block;
     animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
-
 
 .wave-container {
     position: relative;
@@ -98,14 +97,12 @@ a:hover {
     overflow: hidden;
 }
 
-
 .wave {
     position: relative;
     z-index: -2;
     -webkit-filter: drop-shadow( 5px 5px 3px rgba(10, 10, 10, .5));
     filter: drop-shadow( 5px 5px 3px rgba(10, 10, 10, .5));
 }
-
 
 /* background colors */
 
@@ -134,7 +131,42 @@ a:hover {
     color: #f3f4f5;
 }
 
+/* typewriter */
 
+.line-1 {
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 3px solid rgba(255, 255, 255, .75);
+    text-align: center;
+    white-space: nowrap;
+    max-width: 27em;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.anim-typewriter {
+    animation: typewriter 1.5s steps(57) 1s 1 normal both, blinkTextCursor 500ms steps(57) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 27em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(243, 244, 245, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
 
 /* blobs */
 
@@ -142,7 +174,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: 45rem;
     background-position: 50%;
-    background-position-y: 70%;
+    background-position-y: 75%;
     background-image: url(../assets/img/blob-r.svg);
 }
 
@@ -178,16 +210,12 @@ a:hover {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border:10px solid #11151F;
+    border: 10px solid #11151F;
 }
-
-
-
-
 
 /* class */
 
-.profile-menu > li {
+.profile-menu>li {
     list-style: none;
     left: 1%;
     position: absolute;
@@ -216,3 +244,4 @@ a:hover {
 .submenu.active {
     display: block;
 }
+
