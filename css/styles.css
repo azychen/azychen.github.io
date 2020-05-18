@@ -25,11 +25,11 @@ h1 {
 
 
 h2 {
-    text-align: left;
     letter-spacing: -0.1rem;
     z-index: 10;
     font-size: 4rem;
     margin: 4rem 1rem 2.25rem 1rem;
+    max-width: 500px;
 }
 
 p {
@@ -37,12 +37,11 @@ p {
     font-size: 1.5rem;
     margin: 0 1.25rem 5rem 1.25rem;
     font-weight: 600;
-    max-width: 20em;
-    text-align: left;
+    max-width: 500px;
 }
 
 footer {
-    margin: 0 1.25rem 2rem 1.25rem;
+    margin: 0 1.25rem 1rem 1.25rem;
     text-align: center;
 }
 
@@ -70,7 +69,7 @@ a:hover {
 
 .wave-container>svg {
     display: block;
-    animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    animation: animateWave 2500ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 .wave-container {
@@ -163,42 +162,8 @@ a:hover {
     }
 }
 
-/* blobs */
 
-.blob-text-g {
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 20%;
-    background-image: url(../assets/img/blob-g.svg);
-}
 
-.blob-text-p {
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50%;
-    background-image: url(../assets/img/blob-p.svg);
-}
-
-.blob-text-gr1 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 5%;
-    background-image: url(../assets/img/blob-gr1.svg);
-}
-
-.blob-text-gr2 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 30%;
-    background-image: url(../assets/img/blob-gr2.svg);
-}
-
-.blob-text-gr3 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 65%;
-    background-image: url(../assets/img/blob-gr3.svg);
-}
 
 
 /* class */
@@ -259,14 +224,22 @@ a:hover {
 
 .avatar {
     position: absolute;
-    top: 52.5%;
+    top: 53%;
     left: 50%;
     margin-left: -150px;
     width: 300px;
     border-radius: 50%;
-    border: 15px solid #11151F;
+    border: 20px solid #11151F;
     z-index: 500;
 }
+
+/* .avatar:hover {
+    margin-left: -151px;
+    top: 52.3%;
+    width: 302px;
+    border: 0;
+    transition: 0.5s ease-in-out;
+} */
 
 .site-logo {
     color: #d23;
@@ -359,13 +332,93 @@ a:hover {
 
 #section1 {
     position: relative;
-    left: 10%;
-    margin-top: 4.5%;
+    left: 5%;
+    margin-top: 4.6%;
+    text-align: left;
+}
+
+.blob-text-gr1 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 5%;
+    background-image: url(../assets/img/blob-gr1.svg);
+}
+
+
+/* section 2 */
+
+#section2 {
+    position: relative;
+    text-align: right;
+    left: 65%;
+}
+
+
+
+.blob-text-g {
+    background-repeat: no-repeat;
+    background-size: 40em;
+    background-position-x: -5%;
+    background-position-y: -20%;
+    background-image: url(../assets/img/blob-g.svg);
+}
+
+/* section 3 */
+
+#section3 {
+    position: relative;
+    left: 5%;
+    text-align: left;
+}
+
+.blob-text-gr2 {
+    background-repeat: no-repeat;
+    background-size: 50rem;
+    background-position: -2%;
+    background-image: url(../assets/img/blob-gr2.svg);
+}
+
+/* section 4 */
+
+#section4 {
+    position: relative;
+    left: 65%;
+    text-align: right;
 }
 
 .blob-text-b {
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 20%;
+    background-position: 10%;
     background-image: url(../assets/img/blob-b.svg);
+}
+
+/* section 5 */
+
+#section5 {
+    position: relative;
+    left: 50%;
+    margin-left: -250px;
+    text-align: center;
+}
+
+.blob-text-gr3 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../assets/img/blob-gr3.svg);
+}
+
+/* section 6 */
+
+#section6 {
+    position: relative;
+    left: 5%;
+    text-align: left;
+}
+
+.blob-text-p {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 5%;
+    background-image: url(../assets/img/blob-p.svg);
 }
