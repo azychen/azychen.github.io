@@ -165,21 +165,6 @@ a:hover {
 
 /* blobs */
 
-.blob-text-r {
-    background-repeat: no-repeat;
-    background-size: 45rem;
-    background-position: 50%;
-    background-position-y: 75%;
-    background-image: url(../assets/img/blob-r.svg);
-}
-
-.blob-text-b {
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 20%;
-    background-image: url(../assets/img/blob-b.svg);
-}
-
 .blob-text-g {
     background-repeat: no-repeat;
     background-size: contain;
@@ -215,17 +200,6 @@ a:hover {
     background-image: url(../assets/img/blob-gr3.svg);
 }
 
-/* avatar */
-.avatar {
-    position: absolute;
-    top: 52.5%;
-    left: 50%;
-    margin-left: -150px;
-    width: 300px;
-    border-radius: 50%;
-    border: 15px solid #11151F;
-    z-index: 500;
-}
 
 /* class */
 
@@ -279,11 +253,31 @@ a:hover {
     background: #888;
 }
 
-#welcome-message {
-    margin-top: 3em;
+
+
+/* section 0 */
+
+.avatar {
+    position: absolute;
+    top: 52.5%;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+    border-radius: 50%;
+    border: 15px solid #11151F;
+    z-index: 500;
 }
 
-/* logos - set with to 1/numberOfIcons */
+.site-logo {
+    color: #d23;
+    font-weight: 700;
+    font-size: 45;
+    position: absolute;
+    top: -1%;
+    left: 0.5%;
+    letter-spacing: -0.2rem;
+    transition: 0.2s ease-in-out;
+}
 
 .logo {
     width: 16%;
@@ -345,17 +339,16 @@ a:hover {
     right: -0.5%;
 }
 
-/* site logo */
+.blob-text-r {
+    background-repeat: no-repeat;
+    background-size: 45rem;
+    background-position: 50%;
+    background-position-y: 75%;
+    background-image: url(../assets/img/blob-r.svg);
+}
 
-.site-logo {
-    color: #d23;
-    font-weight: 700;
-    font-size: 45;
-    position: absolute;
-    top: -1%;
-    left: 0.5%;
-    letter-spacing: -0.2rem;
-    transition: 0.2s ease-in-out;
+#welcome-message {
+    margin-top: 3em;
 }
 
 .site-logo:hover {
@@ -368,4 +361,11 @@ a:hover {
     position: relative;
     left: 10%;
     margin-top: 4.5%;
+}
+
+.blob-text-b {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 20%;
+    background-image: url(../assets/img/blob-b.svg);
 }
