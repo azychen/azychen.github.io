@@ -21,6 +21,9 @@ $(document).ready(function () {
 
     $(document).keydown(
         function (e) {
+            if (e.keyCode == 9) {
+                e.preventDefault();
+            }
 
             function getMaxSection() {
                 var i = 0;
@@ -29,25 +32,13 @@ $(document).ready(function () {
                 }
                 maxSection = i;
             }
-
-            function incr() {
-                if (currSection < maxSection) {
-                    currSection++;
-                }
-            }
-
-            function decr() {
-                if (currSection > 0) {
-                    currSection--;
-                }
-            }
-
+            
             getMaxSection();
 
-            if (e.keyCode == 37 || e.keyCode == 38) {
-                decr();
-            } else if (e.keyCode == 39 || e.keyCode == 40) {
-                incr();
+            if ((e.keyCode == 37 || e.keyCode == 38) && currSection > 0) {
+                currSection--;
+            } else if ((e.keyCode == 39 || e.keyCode == 40) && currSection < maxSection) {
+                currSection++;
             }
 
             $([document.documentElement, document.body]).animate({

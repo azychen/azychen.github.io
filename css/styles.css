@@ -17,12 +17,12 @@ body {
 /* text formatting */
 
 h1 {
+    text-align: center;
     letter-spacing: -0.15rem;
     z-index: 10;
     font-size: 5rem;
     margin: 5rem 1.25rem 2.5rem 1.25rem;
 }
-
 
 h2 {
     letter-spacing: -0.1rem;
@@ -41,7 +41,7 @@ p {
 }
 
 footer {
-    margin: 0 1.25rem 1rem 1.25rem;
+    margin: 0 1.25rem 0 1.25rem;
     text-align: center;
 }
 
@@ -74,7 +74,6 @@ a:hover {
 
 .wave-container {
     position: relative;
-    text-align: center;
     overflow: hidden;
 }
 
@@ -92,7 +91,6 @@ a:hover {
     position: relative;
     overflow: hidden;
 }
-
 
 .wave {
     background-color: #11151F;
@@ -130,18 +128,18 @@ a:hover {
 .line-1 {
     position: relative;
     top: 50%;
-    width: 24em;
+    width: 19em;
     margin: 0 auto;
     border-right: 3px solid rgba(255, 255, 255, .75);
     text-align: center;
     white-space: nowrap;
-    max-width: 25em;
+    max-width: 16em;
     overflow: hidden;
     transform: translateY(-50%);
 }
 
 .anim-typewriter {
-    animation: typewriter 1.5s steps(57) 1s 1 normal both, blinkTextCursor 500ms steps(57) infinite normal;
+    animation: typewriter 1.5s steps(57) 1s 1 normal both, blinkTextCursor 750ms steps(57) infinite normal;
 }
 
 @keyframes typewriter {
@@ -162,10 +160,6 @@ a:hover {
     }
 }
 
-
-
-
-
 /* class */
 
 .profile-menu>li {
@@ -180,6 +174,15 @@ a:hover {
     padding-bottom: 35px;
 }
 
+.justify-right {
+    text-align: right;
+}
+
+.justify-left {
+    text-align: left;
+}
+
+
 .submenu {
     list-style: none;
     font-weight: 400;
@@ -190,7 +193,7 @@ a:hover {
     position: absolute;
     top: 65px;
     text-align: left;
-    align-items: center;
+    align-items: baseline;
     align-self: center;
 }
 
@@ -218,18 +221,16 @@ a:hover {
     background: #888;
 }
 
-
-
 /* section 0 */
 
 .avatar {
     position: absolute;
-    top: 53%;
+    top: 28em;
     left: 50%;
-    margin-left: -150px;
-    width: 300px;
+    margin-left: -10%;
+    width: 20%;
     border-radius: 50%;
-    border: 20px solid #11151F;
+    border: 1.5vw solid #11151F;
     z-index: 500;
 }
 
@@ -244,7 +245,7 @@ a:hover {
 .site-logo {
     color: #d23;
     font-weight: 700;
-    font-size: 45;
+    font-size: 35;
     position: absolute;
     top: -1%;
     left: 0.5%;
@@ -252,65 +253,7 @@ a:hover {
     transition: 0.2s ease-in-out;
 }
 
-.logo {
-    width: 16%;
-    margin: 4px;
-    left: 0em;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    transition: background 0.2s ease-in-out;
-}
 
-.logo>a {
-    padding: 1.6rem;
-}
-
-.logo-fb {
-    background-image: url(../assets/img/logo-fb.svg);
-}
-
-.logo-fb:hover {
-    background-image: url(../assets/img/logo-fb-h.svg);
-}
-
-.logo-ig {
-    background-image: url(../assets/img/logo-ig.svg);
-}
-
-.logo-ig:hover {
-    background-image: url(../assets/img/logo-ig-h.svg);
-}
-
-.logo-li {
-    background-image: url(../assets/img/logo-li.svg);
-}
-
-.logo-li:hover {
-    background-image: url(../assets/img/logo-li-h.svg);
-}
-
-.logo-gh {
-    background-image: url(../assets/img/logo-gh.svg);
-}
-
-.logo-gh:hover {
-    background-image: url(../assets/img/logo-gh-h.svg);
-}
-
-#logos::after {
-    content: "";
-    clear: both;
-    display: table;
-    align-self: center;
-}
-
-#logos {
-    position: absolute;
-    align-self: center;
-    top: 2%;
-    right: -0.5%;
-}
 
 .blob-text-r {
     background-repeat: no-repeat;
@@ -332,7 +275,6 @@ a:hover {
 
 #section1 {
     position: relative;
-    left: 5%;
     margin-top: 4.6%;
     text-align: left;
 }
@@ -344,16 +286,14 @@ a:hover {
     background-image: url(../assets/img/blob-gr1.svg);
 }
 
-
 /* section 2 */
 
 #section2 {
     position: relative;
+    display: inline-block;
     text-align: right;
-    left: 65%;
+    right: 5%;
 }
-
-
 
 .blob-text-g {
     background-repeat: no-repeat;
@@ -421,4 +361,96 @@ a:hover {
     background-size: contain;
     background-position: 5%;
     background-image: url(../assets/img/blob-p.svg);
+}
+
+/* recorder */
+
+#trees {
+    z-index: 1000;
+    position: relative;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item {
+    border-radius: 1em;
+}
+
+
+
+/* footer */
+
+footer {
+    padding-bottom: 1em;
+    padding-top: 5em;
+    /* bottom: 0; */
+}
+
+#socials::after {
+    content: "";
+    clear: both;
+    display: table;
+    align-self: center;
+}
+
+#socials {
+    align-self: center;
+    bottom: 0;
+    width: 12em;
+    position: relative;
+    left: 50%;
+    margin-left: -6em;
+}
+
+
+.logo {
+    width: 1.5em;
+    margin: 0.5em;
+    margin-bottom: -1em;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: background 0.2s ease-in-out;
+}
+
+.logo>a {
+    padding: 1.6rem;
+}
+
+.logo-fb {
+    background-image: url(../assets/img/logo-fb.svg);
+}
+
+.logo-fb:hover {
+    background-image: url(../assets/img/logo-fb-h.svg);
+}
+
+.logo-ig {
+    background-image: url(../assets/img/logo-ig.svg);
+}
+
+.logo-ig:hover {
+    background-image: url(../assets/img/logo-ig-h.svg);
+}
+
+.logo-li {
+    background-image: url(../assets/img/logo-li.svg);
+}
+
+.logo-li:hover {
+    background-image: url(../assets/img/logo-li-h.svg);
+}
+
+.logo-gh {
+    background-image: url(../assets/img/logo-gh.svg);
+}
+
+.logo-gh:hover {
+    background-image: url(../assets/img/logo-gh-h.svg);
 }
