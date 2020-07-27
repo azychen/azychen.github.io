@@ -21,7 +21,6 @@ h1 {
     letter-spacing: -0.15rem;
     z-index: 10;
     font-size: 4.5rem;
-    margin: 5rem 1.25rem 2.5rem 1.25rem;
 }
 
 h2 {
@@ -93,6 +92,7 @@ a:hover {
 .wave-container-text {
     position: relative;
     overflow: hidden;
+    padding-top: calc(2.5em + 5vw);
 }
 
 .wave {
@@ -266,9 +266,9 @@ a:hover {
     background-image: url(../assets/img/blob-r.svg);
 }
 
+/* 
 #welcome-message {
-    margin-top: 3em;
-}
+} */
 
 .site-logo:hover {
     color: #f3f4f5;
