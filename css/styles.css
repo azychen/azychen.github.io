@@ -227,10 +227,10 @@ a:hover {
     position: absolute;
     top: 28em;
     left: 50%;
-    margin-left: -10%;
-    width: 20%;
+    margin-left: -175px;
+    width: 350px;
     border-radius: 50%;
-    border: 1.5vw solid #11151F;
+    border: 20px solid #11151F;
     z-index: 500;
 }
 
