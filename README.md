@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <a href="https://github.com/azychen/rubiks-cube-solver">
+    <a href="https://antonchen.ca">
         <img src="assets/img/logo.png" alt="Logo" width="180" >
     </a>
 
@@ -21,4 +21,4 @@
 </p>
 </br>
 
-<img src="assets/screenshots/Capture.png">
+<!-- <img src="assets/screenshots/Capture.png"> -->
