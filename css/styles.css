@@ -70,6 +70,9 @@ a:hover {
 .wave-container>svg {
     display: block;
     animation: animateWave 2500ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .wave-container {
@@ -225,7 +228,7 @@ a:hover {
 
 .avatar {
     position: absolute;
-    top: 28em;
+    top: 27em;
     left: 50%;
     margin-left: -175px;
     width: 350px;
