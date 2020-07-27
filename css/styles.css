@@ -92,7 +92,6 @@ a:hover {
 .wave-container-text {
     position: relative;
     overflow: hidden;
-    padding-top: calc(2.5em + 5vw);
 }
 
 .wave {
@@ -264,6 +263,7 @@ a:hover {
     background-position: 50%;
     background-position-y: 75%;
     background-image: url(../assets/img/blob-r.svg);
+    padding-top: calc(2.5em + 5vw);
 }
 
 /* 
@@ -390,9 +390,9 @@ a:hover {
 /* footer */
 
 footer {
-    padding-bottom: 1em;
-    padding-top: 5em;
-    /* bottom: 0; */
+    position: fixed;
+    bottom: auto;
+    padding-top: 3em;
 }
 
 #socials::after {
