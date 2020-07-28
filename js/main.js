@@ -45,5 +45,8 @@ $(document).ready(function () {
                 scrollTop: $("#section" + currSection.toString()).offset().top - $("#section" + currSection.toString()).height() / 4
             }, 200);
         }
+
+        
+
     );
 });
