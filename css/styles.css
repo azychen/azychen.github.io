@@ -36,7 +36,7 @@ h2 {
 p {
     z-index: 10;
     font-size: 1.25rem;
-    margin: 0 1.25rem 5rem 1.25rem;
+    margin: 0 1.25rem 2rem 1.25rem;
     font-weight: 600;
     max-width: 500px;
 }
@@ -571,8 +571,9 @@ a:hover {
 #blob-email {
     background-image: url(../assets/img/logos/logo-em.svg), url(../assets/img/blob-gr3.svg);
     background-repeat: no-repeat;
+    padding-bottom: 20%;
     background-position-x: 50%, 3.5em;
-    background-position-y: 75%, 0;
+    background-position-y: 70%, 0;
 }
 
 #blob-email:hover {
@@ -584,7 +585,8 @@ a:hover {
     background-image: url(../assets/img/logos/logo-gh.svg), url(../assets/img/blob-gr2.svg);
     background-repeat: no-repeat;
     background-position-x: 50%, 4em;
-    background-position-y: 75%, 0.5em;
+    background-position-y: 70%, 0.5em;
+    padding-bottom: 20%;
 }
 
 #blob-github:hover {
@@ -597,7 +599,8 @@ a:hover {
     background-image: url(../assets/img/logos/logo-fb.svg), url(../assets/img/blob-gr1.svg);
     background-repeat: no-repeat;
     background-position-x: 50%, 4em;
-    background-position-y: 75%, 1em;
+    background-position-y: 70%, 1em;
+    padding-bottom: 20%;
 }
 
 #blob-fb:hover {
@@ -610,7 +613,8 @@ a:hover {
     background-image: url(../assets/img/logos/logo-li.svg), url(../assets/img/blob-gr1.svg);
     background-repeat: no-repeat;
     background-position-x: 50%, 5em;
-    background-position-y: 75%, -1em;
+    background-position-y: 70%, -1em;
+    padding-bottom: 20%;
 }
 
 #blob-linkedin:hover {
@@ -622,8 +626,9 @@ a:hover {
 #blob-cv {
     background-image: url(../assets/img/logos/logo-cv.svg), url(../assets/img/blob-gr3.svg);
     background-position-x: 50%, 3em;
-    background-position-y: 75%, 0;
+    background-position-y: 70%, 0;
     background-repeat: no-repeat;
+    padding-bottom: 20%;
 }
 
 #blob-cv:hover {
@@ -656,6 +661,7 @@ a:hover {
     position: absolute;
     top: 60%;
     width: max(60vw, 350px);
+    z-index: 5;
 }
 
 /* slideshow */
@@ -676,7 +682,8 @@ a:hover {
 .slides + .slides { opacity: 0; }
 
 .about-slides {
-    margin-right: 0em;
-    left: 10%;
+    /* margin-right: auto; */
+    z-index: 100;
+    margin-left: 2em;
     top: 0;
 }

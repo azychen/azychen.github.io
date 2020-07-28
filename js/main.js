@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     var current = 0,
-        slides = document.getElementsByTagName("img");
+        slides = document.getElementsByClassName("slides");
 
     setInterval(function () {
         for (var i = 0; i < slides.length; i++) {
@@ -9,7 +9,7 @@ $(document).ready(function () {
         }
         current = (current != slides.length - 1) ? current + 1 : 0;
         slides[current].style.opacity = 1;
-    }, 7000);
+    }, 7500);
 
 
     var currSection = 0;
