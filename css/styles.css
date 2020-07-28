@@ -40,8 +40,12 @@ p {
 }
 
 footer {
-    margin: 0 1.25rem 0 1.25rem;
+    margin: 0 3.5rem 0 3.5rem;
     text-align: center;
+    position: absolute;
+    bottom: -27em;
+    padding-bottom: 0em;
+    padding-top: 0em;
 }
 
 a {
@@ -274,6 +278,18 @@ a:hover {
     color: #f3f4f5;
 }
 
+/* show-section */
+
+/* #show-sections {
+
+} */
+
+
+#footer-wave {
+    height: 450px;
+}
+
+
 /* section 1 */
 
 #section1 {
@@ -375,6 +391,7 @@ a:hover {
 }
 
 .container {
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -385,16 +402,6 @@ a:hover {
     border-radius: 1em;
 }
 
-
-
-/* footer */
-
-footer {
-    position: fixed;
-    bottom: auto;
-    padding-bottom: 0.5em;
-    padding-top: 3em;
-}
 
 #socials::after {
     content: "";
