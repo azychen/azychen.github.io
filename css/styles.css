@@ -28,7 +28,6 @@ h2 {
     letter-spacing: -0.1rem;
     z-index: 10;
     font-size: 3rem;
-    margin: 4rem 1rem 2.25rem 1rem;
     max-width: 500px;
 }
 
@@ -132,7 +131,7 @@ a:hover {
 
 /* typewriter */
 
-.line-1 {
+.line {
     position: relative;
     top: 50%;
     width: 19em;
@@ -140,10 +139,14 @@ a:hover {
     border-right: 3px solid rgba(255, 255, 255, .75);
     text-align: center;
     white-space: nowrap;
-    max-width: 17.5em;
     overflow: hidden;
     transform: translateY(-50%);
 }
+
+.line-1 {
+    max-width: 17.5em;
+}
+
 
 .anim-typewriter {
     animation: typewriter 1.5s steps(57) 1s 1 normal both, blinkTextCursor 750ms steps(57) infinite normal;
@@ -230,6 +233,10 @@ a:hover {
 
 /* section 0 */
 
+#section0 {
+    padding-top: calc(5em + 10vw);
+}
+
 .avatar {
     position: absolute;
     left: 50%;
@@ -268,7 +275,6 @@ a:hover {
     background-position: 50%;
     background-position-y: 75%;
     background-image: url(../assets/img/blob-r.svg);
-    padding-top: calc(5em + 10vw);
 }
 
 
@@ -278,33 +284,46 @@ a:hover {
 
 /* show-section */
 
+.show-sections {
+    margin: 0 20vw 0 20vw;
+}
 
 
 #blob-projects {
     background-image: url(../assets/img/blob-gr1.svg);
+    background-repeat: no-repeat;
 }
 
 #blob-projects:hover{
     background-image: url(../assets/img/blob-gr1-h.svg);
+    background-repeat: no-repeat;
     color: #4bf;
 }
 
 #blob-about {
     background-image: url(../assets/img/blob-gr2.svg);
+    background-repeat: no-repeat;
 }
 
 #blob-about:hover{
     background-image: url(../assets/img/blob-gr2-h.svg);
     color: #abc;
+    background-repeat: no-repeat;
 }
 
 #blob-contact {
     background-image: url(../assets/img/blob-gr3.svg);
+    background-repeat: no-repeat;
 }
 
 #blob-contact:hover{
     background-image: url(../assets/img/blob-gr3-h.svg);
     color: #f45;
+    background-repeat: no-repeat;
+}
+
+.menu-heading {
+    margin: 4rem 1rem 2.25rem 1rem;
 }
 
 .menu-item {
@@ -498,4 +517,57 @@ a:hover {
 
 .logo-gh:hover {
     background-image: url(../assets/img/logo-gh-h.svg);
+}
+
+
+
+
+/* contact.html */
+
+#contact-header {
+    margin-top: calc(1em + 3vw);
+}
+
+
+.line-2 {
+    max-width: 19.5em;
+}
+
+#show-contacts {
+    top: -12em;
+    position: relative;
+}
+
+.contact-subtitle {
+    margin-block-start: 0.4em !important;
+    margin-block-end: 0.4em !important;
+    font-size: xx-large;
+    top: 0;
+}
+
+.contact-blob {
+    font-size: large;
+    /* text-decoration: underline; */
+}
+
+#blob-linkedin {
+    background-image: url(../assets/img/blob-gr1.svg);
+    background-position-x: 2em;
+    background-repeat: no-repeat;
+}
+
+#blob-linkedin:hover{
+    background-image: url(../assets/img/blob-gr1-h.svg);
+    background-repeat: no-repeat;
+}
+
+#blob-insta {
+    background-image: url(../assets/img/blob-gr3.svg);
+    background-position-x: 3em;
+    background-repeat: no-repeat;
+}
+
+#blob-insta:hover{
+    background-image: url(../assets/img/blob-gr3-h.svg);
+    background-repeat: no-repeat;
 }
