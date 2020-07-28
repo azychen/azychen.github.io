@@ -30,7 +30,7 @@ h2 {
     z-index: 10;
     font-size: 3rem;
     max-width: 500px;
-    margin-bottom: 1em;
+    margin: 1rem 1.25rem 2rem 1.25rem;
 }
 
 p {
@@ -50,7 +50,6 @@ footer {
     padding-top: 0em;
 }
 
-
 a {
     text-decoration: none;
     display: block;
@@ -60,8 +59,6 @@ a {
 a:hover {
     color: #f3f4f5;
 }
-
-
 
 /* waves */
 
@@ -194,8 +191,6 @@ a:hover {
 .page-button:hover {
     color: #f3f3f3;
 }
-
-
 
 .profile-menu>li {
     list-style: none;
@@ -359,7 +354,6 @@ a:hover {
     pointer-events: none;
 }
 
-
 #footer-wave {
     height: 450px;
 }
@@ -369,13 +363,12 @@ a:hover {
     bottom: 0em;
 }
 
-
 /* section 1 */
 
 #section1 {
     position: relative;
     margin-top: 4.6%;
-    text-align: left;
+    /* text-align: center; */
 }
 
 .blob-text-gr1 {
@@ -554,7 +547,7 @@ a:hover {
     max-width: 19.8em;
 }
 
-.line-3 { 
+.line-3 {
     max-width: 6em;
 }
 
@@ -575,11 +568,10 @@ a:hover {
     /* text-decoration: underline; */
 }
 
-
 #blob-email {
-    background-image:  url(../assets/img/logos/logo-em.svg), url(../assets/img/blob-gr3.svg);
+    background-image: url(../assets/img/logos/logo-em.svg), url(../assets/img/blob-gr3.svg);
     background-repeat: no-repeat;
-    background-position-x: 40%, 1em;
+    background-position-x: 50%, 3.5em;
     background-position-y: 75%, 0;
 }
 
@@ -588,12 +580,11 @@ a:hover {
     color: #f45;
 }
 
-
 #blob-github {
     background-image: url(../assets/img/logos/logo-gh.svg), url(../assets/img/blob-gr2.svg);
     background-repeat: no-repeat;
-    background-position-x: 40%, 1.5em;
-    background-position-y: 75%, 1em;
+    background-position-x: 50%, 4em;
+    background-position-y: 75%, 0.5em;
 }
 
 #blob-github:hover {
@@ -605,7 +596,7 @@ a:hover {
 #blob-fb {
     background-image: url(../assets/img/logos/logo-fb.svg), url(../assets/img/blob-gr1.svg);
     background-repeat: no-repeat;
-    background-position-x: 40%, 3em;
+    background-position-x: 50%, 4em;
     background-position-y: 75%, 1em;
 }
 
@@ -615,12 +606,11 @@ a:hover {
     color: #4bf;
 }
 
-
 #blob-linkedin {
     background-image: url(../assets/img/logos/logo-li.svg), url(../assets/img/blob-gr1.svg);
     background-repeat: no-repeat;
-    background-position-x: 40%, 3em;
-    background-position-y: 75%, 1em;
+    background-position-x: 50%, 5em;
+    background-position-y: 75%, -1em;
 }
 
 #blob-linkedin:hover {
@@ -631,7 +621,7 @@ a:hover {
 
 #blob-cv {
     background-image: url(../assets/img/logos/logo-cv.svg), url(../assets/img/blob-gr3.svg);
-    background-position-x: 40%, 3em;
+    background-position-x: 50%, 3em;
     background-position-y: 75%, 0;
     background-repeat: no-repeat;
 }
@@ -645,7 +635,6 @@ a:hover {
 .negative-margin {
     margin-bottom: -15em;
 }
-
 
 .home-logo {
     background-image: url(../assets/img/logos/logo-hm.svg);
@@ -667,4 +656,27 @@ a:hover {
     position: absolute;
     top: 60%;
     width: max(60vw, 350px);
+}
+
+/* slideshow */
+
+.slideshow-container {
+    width: 50%;
+    height: max(30vw, 350px);
+}
+
+.slides {
+    position: absolute;
+    transition: opacity .5s ease-in;
+    width: max(350px, 40vw);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slides + .slides { opacity: 0; }
+
+.about-slides {
+    margin-right: 0em;
+    left: 10%;
+    top: 0;
 }
