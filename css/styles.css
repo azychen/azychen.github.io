@@ -320,6 +320,7 @@ a:hover {
 #blob-about {
     background-image: url(../assets/img/blob-gr2.svg);
     background-repeat: no-repeat;
+    background-position-x: 1em;
 }
 
 #blob-about:hover {
@@ -331,6 +332,7 @@ a:hover {
 #blob-contact {
     background-image: url(../assets/img/blob-gr3.svg);
     background-repeat: no-repeat;
+    background-position-x: 3em;
 }
 
 #blob-contact:hover {
@@ -351,6 +353,9 @@ a:hover {
 
 .menu-item-text {
     max-width: 15em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     pointer-events: none;
 }
 
