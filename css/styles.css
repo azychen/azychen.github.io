@@ -226,13 +226,13 @@ a:hover {
 /* section 0 */
 
 .avatar {
-    position: relative;
-    top: -25em;
+    position: absolute;
     left: 50%;
+    margin-top: 35px;
     margin-left: -160px;
     width: 320px;
     border-radius: 50%;
-    border: 20px solid #11151F;
+    border: 25px solid #11151F;
     z-index: 500;
 }
 
