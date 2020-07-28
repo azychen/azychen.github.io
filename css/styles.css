@@ -12,6 +12,7 @@ body {
     margin: 0;
     font-family: "Inter", sans-serif;
     background: #11151F;
+    overflow-x: hidden;
 }
 
 /* text formatting */
@@ -139,7 +140,7 @@ a:hover {
     border-right: 3px solid rgba(255, 255, 255, .75);
     text-align: center;
     white-space: nowrap;
-    max-width: 16em;
+    max-width: 17.5em;
     overflow: hidden;
     transform: translateY(-50%);
 }
@@ -267,12 +268,9 @@ a:hover {
     background-position: 50%;
     background-position-y: 75%;
     background-image: url(../assets/img/blob-r.svg);
-    padding-top: calc(2.5em + 5vw);
+    padding-top: calc(5em + 10vw);
 }
 
-/* 
-#welcome-message {
-} */
 
 .site-logo:hover {
     color: #f3f4f5;
@@ -280,9 +278,48 @@ a:hover {
 
 /* show-section */
 
-/* #show-sections {
+.show-sections {
+    margin: 0 20vw 0 20vw;
+}
 
-} */
+
+#blob-projects {
+    background-image: url(../assets/img/blob-gr1.svg);
+}
+
+#blob-projects:hover{
+    background-image: url(../assets/img/blob-gr1-h.svg);
+    color: #4bf;
+}
+
+#blob-about {
+    background-image: url(../assets/img/blob-gr2.svg);
+}
+
+#blob-about:hover{
+    background-image: url(../assets/img/blob-gr2-h.svg);
+    color: #abc;
+}
+
+#blob-contact {
+    background-image: url(../assets/img/blob-gr3.svg);
+}
+
+#blob-contact:hover{
+    background-image: url(../assets/img/blob-gr3-h.svg);
+    color: #f45;
+}
+
+.menu-item {
+    text-align: center;
+    width: 300px;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.menu-item-text {
+    max-width: 15em;
+    pointer-events: none;
+}
 
 
 #footer-wave {
