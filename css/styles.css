@@ -331,9 +331,16 @@ a:hover {
     pointer-events: none;
 }
 
+
 #footer-wave {
     height: 450px;
 }
+
+.footer-wave-contact {
+    position: relative;
+    bottom: 0em;
+}
+
 
 /* section 1 */
 
@@ -590,15 +597,32 @@ a:hover {
     color: #4bf;
 }
 
-#blob-insta {
-    background-image: url(../assets/img/logo-ig.svg), url(../assets/img/blob-gr3.svg);
+#blob-cv {
+    background-image: url(../assets/img/logo-cv.svg), url(../assets/img/blob-gr3.svg);
     background-position-x: 40%, 3em;
     background-position-y: 75%, 0;
     background-repeat: no-repeat;
 }
 
-#blob-insta:hover {
-    background-image: url(../assets/img/logo-ig-h.svg), url(../assets/img/blob-gr3-h.svg);
+#blob-cv:hover {
+    background-image: url(../assets/img/logo-cv-h.svg), url(../assets/img/blob-gr3-h.svg);
     background-repeat: no-repeat;
     color: #f45;
+}
+
+.negative-margin {
+    margin-bottom: -15em;
+}
+
+
+.home-logo {
+    background-image: url(../assets/img/logo-hm.svg);
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: -2em;
+}
+
+.home-logo:hover {
+    background-image: url(../assets/img/logo-hm-h.svg);
 }
