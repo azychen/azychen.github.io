@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 html {
     box-sizing: border-box;
 }
@@ -33,7 +34,7 @@ h2 {
 
 p {
     z-index: 10;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 0 1.25rem 5rem 1.25rem;
     font-weight: 600;
     max-width: 500px;
@@ -48,9 +49,9 @@ footer {
     padding-top: 0em;
 }
 
+
 a {
     text-decoration: none;
-    padding: 5px 10px;
     display: block;
     color: #11151F;
 }
@@ -58,6 +59,8 @@ a {
 a:hover {
     color: #f3f4f5;
 }
+
+
 
 /* waves */
 
@@ -144,7 +147,7 @@ a:hover {
 }
 
 .line-1 {
-    max-width: 17.5em;
+    max-width: 17em;
 }
 
 .anim-typewriter {
@@ -170,6 +173,28 @@ a:hover {
 }
 
 /* class */
+
+.page-buttons {
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    width: 400px;
+    left: calc(50% - 200px);
+    z-index: 5;
+    justify-content: space-evenly !important;
+    padding-top: 1em;
+    align-items: stretch;
+}
+
+.page-button {
+    margin: 1em;
+    transition: 0.2s ease-in-out;
+}
+
+.page-button:hover {
+    color: #f3f3f3;
+}
+
+
 
 .profile-menu>li {
     list-style: none;
@@ -232,7 +257,7 @@ a:hover {
 /* section 0 */
 
 #section0 {
-    padding-top: calc(5em + 10vw);
+    padding-top: calc(5em + 8vw);
 }
 
 .avatar {
@@ -247,15 +272,12 @@ a:hover {
 }
 
 /* .avatar:hover {
-    margin-left: -151px;
-    top: 52.3%;
-    width: 302px;
-    border: 0;
     transition: 0.5s ease-in-out;
 } */
 
 .site-logo {
     color: #d23;
+    font-style: italic;
     font-weight: 700;
     font-size: 35;
     position: absolute;
@@ -450,10 +472,6 @@ a:hover {
     align-items: center;
 }
 
-.item {
-    border-radius: 1em;
-}
-
 #socials::after {
     content: "";
     clear: both;
@@ -485,35 +503,35 @@ a:hover {
 }
 
 .logo-fb {
-    background-image: url(../assets/img/logo-fb.svg);
+    background-image: url(../assets/img/logos/logos/logo-fb.svg);
 }
 
 .logo-fb:hover {
-    background-image: url(../assets/img/logo-fb-h.svg);
+    background-image: url(../assets/img/logos/logos/logo-fb-h.svg);
 }
 
 .logo-ig {
-    background-image: url(../assets/img/logo-ig.svg);
+    background-image: url(../assets/img/logos/logos/logo-ig.svg);
 }
 
 .logo-ig:hover {
-    background-image: url(../assets/img/logo-ig-h.svg);
+    background-image: url(../assets/img/logos/logos/logo-ig-h.svg);
 }
 
 .logo-li {
-    background-image: url(../assets/img/logo-li.svg);
+    background-image: url(../assets/img/logos/logos/logo-li.svg);
 }
 
 .logo-li:hover {
-    background-image: url(../assets/img/logo-li-h.svg);
+    background-image: url(../assets/img/logos/logos/logo-li-h.svg);
 }
 
 .logo-gh {
-    background-image: url(../assets/img/logo-gh.svg);
+    background-image: url(../assets/img/logos/logos/logo-gh.svg);
 }
 
 .logo-gh:hover {
-    background-image: url(../assets/img/logo-gh-h.svg);
+    background-image: url(../assets/img/logos/logos/logo-gh-h.svg);
 }
 
 /* contact.html */
@@ -523,7 +541,11 @@ a:hover {
 }
 
 .line-2 {
-    max-width: 19.5em;
+    max-width: 19.8em;
+}
+
+.line-3 {
+    max-width: 6em;
 }
 
 #show-contacts {
@@ -545,78 +567,78 @@ a:hover {
 
 
 #blob-email {
-    background-image:  url(../assets/img/logo-em.svg), url(../assets/img/blob-gr3.svg);
+    background-image:  url(../assets/img/logos/logo-em.svg), url(../assets/img/blob-gr3.svg);
     background-repeat: no-repeat;
     background-position-x: 40%, 1em;
     background-position-y: 75%, 0;
 }
 
 #blob-email:hover {
-    background-image: url(../assets/img/logo-em-h.svg), url(../assets/img/blob-gr3-h.svg);
+    background-image: url(../assets/img/logos/logo-em-h.svg), url(../assets/img/blob-gr3-h.svg);
     color: #f45;
 }
 
 
 #blob-github {
-    background-image: url(../assets/img/logo-gh.svg), url(../assets/img/blob-gr2.svg);
+    background-image: url(../assets/img/logos/logo-gh.svg), url(../assets/img/blob-gr2.svg);
     background-repeat: no-repeat;
     background-position-x: 40%, 1.5em;
     background-position-y: 75%, 1em;
 }
 
 #blob-github:hover {
-    background-image: url(../assets/img/logo-gh-h.svg), url(../assets/img/blob-gr2-h.svg);
+    background-image: url(../assets/img/logos/logo-gh-h.svg), url(../assets/img/blob-gr2-h.svg);
     color: #abc;
     background-repeat: no-repeat;
 }
 
 #blob-fb {
-    background-image: url(../assets/img/logo-fb.svg), url(../assets/img/blob-gr1.svg);
+    background-image: url(../assets/img/logos/logo-fb.svg), url(../assets/img/blob-gr1.svg);
     background-repeat: no-repeat;
     background-position-x: 40%, 3em;
     background-position-y: 75%, 1em;
 }
 
 #blob-fb:hover {
-    background-image: url(../assets/img/logo-fb-h.svg), url(../assets/img/blob-gr1-h.svg);
+    background-image: url(../assets/img/logos/logo-fb-h.svg), url(../assets/img/blob-gr1-h.svg);
     background-repeat: no-repeat;
     color: #4bf;
 }
 
 
 #blob-linkedin {
-    background-image: url(../assets/img/logo-li.svg), url(../assets/img/blob-gr1.svg);
+    background-image: url(../assets/img/logos/logo-li.svg), url(../assets/img/blob-gr1.svg);
     background-repeat: no-repeat;
     background-position-x: 40%, 3em;
     background-position-y: 75%, 1em;
 }
 
 #blob-linkedin:hover {
-    background-image: url(../assets/img/logo-li-h.svg), url(../assets/img/blob-gr1-h.svg);
+    background-image: url(../assets/img/logos/logo-li-h.svg), url(../assets/img/blob-gr1-h.svg);
     background-repeat: no-repeat;
     color: #4bf;
 }
 
 #blob-cv {
-    background-image: url(../assets/img/logo-cv.svg), url(../assets/img/blob-gr3.svg);
+    background-image: url(../assets/img/logos/logo-cv.svg), url(../assets/img/blob-gr3.svg);
     background-position-x: 40%, 3em;
     background-position-y: 75%, 0;
     background-repeat: no-repeat;
 }
 
 #blob-cv:hover {
-    background-image: url(../assets/img/logo-cv-h.svg), url(../assets/img/blob-gr3-h.svg);
+    background-image: url(../assets/img/logos/logo-cv-h.svg), url(../assets/img/blob-gr3-h.svg);
     background-repeat: no-repeat;
     color: #f45;
 }
 
 .negative-margin {
-    margin-bottom: -15em;
+    margin-bottom: -18em;
 }
 
 
 .home-logo {
-    background-image: url(../assets/img/logo-hm.svg);
+    background-image: url(../assets/img/logos/logo-hm.svg);
     background-size: 80px;
     background-repeat: no-repeat;
     background-position-x: 50%;
@@ -624,5 +646,9 @@ a:hover {
 }
 
 .home-logo:hover {
-    background-image: url(../assets/img/logo-hm-h.svg);
+    background-image: url(../assets/img/logos/logo-hm-h.svg);
+}
+
+#copyright {
+    background-color: transparent;
 }
