@@ -668,10 +668,17 @@ a:hover {
     pointer-events: none;
 }
 
+@media only screen and (max-width: 1026px) {
+    #about-img-blob {
+        visibility: hidden;
+    }   
+}
+
+
 /* slideshow */
 
 .slideshow-container {
-    width: max(50%, 400px);
+    width: max(50%, 320px);
     /* margin-left: auto; */
     /* margin-right: auto; */
     /* width: fit-content; */
@@ -684,12 +691,14 @@ a:hover {
 .slides {
     position: absolute;
     transition: opacity .5s ease-in;
-    width: max(400px, 40vw);
+    width: max(320px, 40vw);
     margin-left: auto;
     margin-right: auto;
 }
 
-.slides + .slides { opacity: 0; }
+.slides+.slides {
+    opacity: 0;
+}
 
 .about-slides {
     z-index: 100;
