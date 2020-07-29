@@ -21,4 +21,4 @@
 </p>
 </br>
 
-<!-- <img src="assets/screenshots/Capture.png"> -->
+<img src="assets/screenshots/Capture.png">

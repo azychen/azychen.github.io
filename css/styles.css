@@ -22,7 +22,7 @@ h1 {
     text-align: center;
     letter-spacing: -0.15rem;
     z-index: 10;
-    font-size: 4.5rem;
+    font-size: 4rem;
 }
 
 h2 {
@@ -72,10 +72,18 @@ a:hover {
 
 .wave-container>svg {
     display: block;
-    animation: animateWave 2500ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    /* animation: animateWave 2500ms cubic-bezier(0.23, 1, 0.32, 1) forwards; */
     height: 450px;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.animated-wave-container>svg {
+    height: 450px;
+    display: block;
+    animation: animateWave 2500ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 .wave-container {
@@ -95,6 +103,7 @@ a:hover {
 
 .wave-container-text {
     position: relative;
+    z-index: 1000;
     overflow: hidden;
 }
 
@@ -171,13 +180,18 @@ a:hover {
 
 /* class */
 
+#contact-wave {
+    height: 500px;
+}
+
 .page-buttons {
     font-family: "Poppins", sans-serif;
     position: absolute;
     width: 400px;
     left: calc(50% - 200px);
-    z-index: 5;
-    justify-content: space-evenly !important;
+    background-color: #f45;
+    z-index: 1001;
+    justify-content: center !important;
     padding-top: 1em;
     align-items: stretch;
     flex-wrap: nowrap !important;
@@ -254,7 +268,7 @@ a:hover {
 /* section 0 */
 
 #section0 {
-    padding-top: calc(5em + 8vw);
+    padding-top: 125px;
 }
 
 .avatar {
@@ -303,6 +317,7 @@ a:hover {
 } */
 
 #blob-projects {
+    padding: 2em;
     background-image: url(../assets/img/blob-gr1.svg);
     background-repeat: no-repeat;
     background-position-x: 2em;
@@ -315,6 +330,7 @@ a:hover {
 }
 
 #blob-about {
+    padding: 2em;
     background-image: url(../assets/img/blob-gr2.svg);
     background-repeat: no-repeat;
     background-position-x: 3em;
@@ -327,6 +343,7 @@ a:hover {
 }
 
 #blob-contact {
+    padding: 2em;
     background-image: url(../assets/img/blob-gr3.svg);
     background-repeat: no-repeat;
     background-position-x: 5em;
@@ -369,7 +386,6 @@ a:hover {
 
 #section1 {
     position: relative;
-    margin-top: 4.6%;
     /* text-align: center; */
 }
 
@@ -538,11 +554,16 @@ a:hover {
 /* contact.html */
 
 #contact-header {
-    margin-top: calc(1em + 3vw);
+    position: absolute;
+    width: 400px;
+    left: calc(50% - 200px);
+    top: 0px;
+    margin-top: 50px;
+    background: transparent;
 }
 
 .line-2 {
-    max-width: 19.8em;
+    max-width: 10.2em;
 }
 
 .line-3 {
@@ -550,7 +571,7 @@ a:hover {
 }
 
 #show-contacts {
-    top: -12em;
+    top: -5em;
     position: relative;
 }
 
@@ -640,7 +661,7 @@ a:hover {
 }
 
 .move-up {
-    top: calc(10vw - 300px);
+    top: -20%;
 }
 
 .home-logo {
@@ -663,46 +684,65 @@ a:hover {
     bottom: 1em;
     width: 100%;
     text-align: center;
-    /* left: calc(50% - 4em); */
     pointer-events: none;
 }
 
+@media only screen and (max-width: 1128px) {
+    #mobile-negative-margin {
+        margin-bottom: -250px;
+    }
+}
+
+
 #about-img-blob {
     position: absolute;
-    top: 55%;
-    left: 25%;
-    width: 50%;
+    top: 350px;
+    left: calc(-400px + 50%);
+    width: 1000px;
     z-index: 20;
     pointer-events: none;
 }
 
-@media only screen and (max-width: 1026px) {
+/* @media only screen and (max-width: 1128px) {
     #about-img-blob {
         visibility: hidden;
-    }   
-}
-
+    }
+} */
 
 /* slideshow */
 
 .slideshow-container {
-    width: max(50%, 320px);
-    height: max(30vw, 350px);
+    width: 50%;
+    height: 50%;
+    /* width: max(50%, 320px); */
+    /* height: max(30vw, 350px); */
     justify-content: center;
     align-items: center;
     pointer-events: none;
+    z-index: 100;
 }
 
 .slides {
     position: absolute;
     transition: opacity .5s ease-in;
-    width: max(320px, 40vw);
-    margin-left: auto;
-    margin-right: auto;
+    width: 30%;
 }
 
 .slides+.slides {
     opacity: 0;
+}
+
+#about-portrait {
+    width: 600px;
+    z-index: 101;
+}
+
+@media only screen and (max-width: 1128px) {
+    #about-portrait {
+        width: 80%;
+        margin-bottom: 50px;
+        z-index: 101;
+    }
 }
 
 .about-slides {
