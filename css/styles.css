@@ -41,17 +41,8 @@ p {
     max-width: 500px;
 }
 
-/* footer {
-    margin: 0 3.5rem 0 3.5rem;
-    text-align: center;
-    position: absolute;
-    bottom: -27em;
-} */
-
 footer {
     position: fixed;
-    /* height: 50px; */
-    /* background-color: red; */
     bottom: 0px;
     left: 0px;
     right: 0px;
@@ -183,9 +174,8 @@ a:hover {
 .page-buttons {
     font-family: "Poppins", sans-serif;
     position: absolute;
-    width: max(400px, 30%);
-    /* width: 400px; */
-    left: calc(50% - max(200px, 15%));
+    width: 400px;
+    left: calc(50% - 200px);
     z-index: 5;
     justify-content: space-evenly !important;
     padding-top: 1em;
