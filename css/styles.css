@@ -656,13 +656,14 @@ a:hover {
 }
 
 #copyright {
+    font-family: "Poppins", sans-serif;
     position: absolute;
     background-color: transparent;
     z-index: 100;
     bottom: 1em;
-    width: 8em;
+    width: 100%;
     text-align: center;
-    left: calc(50% - 4em);
+    /* left: calc(50% - 4em); */
     pointer-events: none;
 }
 
@@ -670,7 +671,7 @@ a:hover {
     position: absolute;
     top: 55%;
     left: 25%;
-    width: calc(400px + 35vw);
+    width: 50%;
     z-index: 20;
     pointer-events: none;
 }
