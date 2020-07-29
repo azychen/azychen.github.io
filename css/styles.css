@@ -84,6 +84,7 @@ a:hover {
     height: 450px;
     display: block;
     animation: animateWave 2500ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    overflow-x: hidden;
 }
 
 .wave-container {
@@ -688,7 +689,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 1128px) {
-    #mobile-negative-margin {
+    .mobile-negative-margin {
         margin-bottom: -250px;
     }
 }
@@ -701,6 +702,7 @@ a:hover {
     width: 1000px;
     z-index: 20;
     pointer-events: none;
+    overflow: hidden;
 }
 
 /* @media only screen and (max-width: 1128px) {
