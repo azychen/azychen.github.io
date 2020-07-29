@@ -11,7 +11,6 @@ $(document).ready(function () {
         slides[current].style.opacity = 1;
     }, 10000);
 
-
     var currSection = 0;
     var maxSection;
   
