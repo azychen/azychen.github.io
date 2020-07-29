@@ -184,6 +184,7 @@ a:hover {
 }
 
 .page-button {
+    z-index: 100;
     margin: 1em;
     transition: 0.2s ease-in-out;
 }
@@ -664,6 +665,7 @@ a:hover {
     left: 25%;
     width: calc(400px + 35vw);
     z-index: 20;
+    pointer-events: none;
 }
 
 /* slideshow */
@@ -676,6 +678,7 @@ a:hover {
     height: max(30vw, 350px);
     justify-content: center;
     align-items: center;
+    pointer-events: none;
 }
 
 .slides {
@@ -697,4 +700,14 @@ a:hover {
 
 .to-front {
     z-index: 100;
+}
+
+.inline {
+    display: inline;
+    color: #f3f3f3;
+    transition: 0.2s ease-in-out;
+}
+
+.inline:hover {
+    color: #f45;
 }

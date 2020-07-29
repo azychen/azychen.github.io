@@ -9,12 +9,12 @@ $(document).ready(function () {
         }
         current = (current != slides.length - 1) ? current + 1 : 0;
         slides[current].style.opacity = 1;
-    }, 7500);
+    }, 10000);
 
 
     var currSection = 0;
     var maxSection;
-
+  
     $(document).keydown(
         function (e) {
             if (e.keyCode == 9) {
@@ -41,8 +41,6 @@ $(document).ready(function () {
                 scrollTop: $("#section" + currSection.toString()).offset().top - $("#section" + currSection.toString()).height() / 4
             }, 200);
         }
-
-
-
     );
+
 });
