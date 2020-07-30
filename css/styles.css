@@ -56,12 +56,22 @@ p {
 }
 
 footer {
-    position: fixed;
     bottom: 0px;
     left: 0px;
     right: 0px;
     margin-bottom: 0px;
 }
+
+/* @media only screen and (max-width: 1128px) {
+    footer {
+        position: absolute;
+        bottom: 250px;
+        left: 0px;
+        right: 0px;
+        margin-bottom: 0px;
+    } 
+} */
+
 
 a {
     text-decoration: none;
@@ -98,7 +108,7 @@ a:hover {
     height: 450px;
     display: block;
     animation: animateWave 2500ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .wave-container {
@@ -163,7 +173,7 @@ a:hover {
     border-right: 3px solid rgba(255, 255, 255, .75);
     text-align: center;
     white-space: nowrap;
-    overflow: hidden;
+    overflow-x: hidden;
     transform: translateY(-50%);
 }
 
@@ -202,14 +212,21 @@ a:hover {
 .page-buttons {
     font-family: "Poppins", sans-serif;
     position: absolute;
-    width: 400px;
-    left: calc(50% - 200px);
+    width: 100%;
+    /* left: calc(50% - 200px); */
     background-color: #f45;
     z-index: 1001;
-    justify-content: center !important;
+    justify-content: flex-end !important;
     padding-top: 1em;
+    padding-right: 1em;
     align-items: stretch;
     flex-wrap: nowrap !important;
+}
+
+@media only screen and (max-width: 1128px) {
+    .page-buttons {
+        justify-content: center !important;
+    }
 }
 
 .page-button {
@@ -585,10 +602,10 @@ a:hover {
     max-width: 13.5em;
 }
 
-#show-contacts {
+/* #show-contacts {
     top: -5em;
     position: relative;
-}
+} */
 
 .contact-subtitle {
     margin-block-start: 0.4em !important;
@@ -701,13 +718,6 @@ a:hover {
     text-align: center;
     pointer-events: none;
 }
-
-@media only screen and (max-width: 1128px) {
-    .mobile-negative-margin {
-        margin-bottom: -250px;
-    }
-}
-
 
 #about-img-blob {
     position: absolute;
