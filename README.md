@@ -21,4 +21,3 @@
 </p>
 </br>
 
-<img src="assets/screenshots/Capture.png" alt="Screenshot" width="100%">
