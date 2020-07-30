@@ -21,4 +21,4 @@
 </p>
 </br>
 
-![Screenshot](/assets/screenshots/Capture.png)
+<img src="assets/screenshots/Capture.png" alt="Screenshot" width="100%">
