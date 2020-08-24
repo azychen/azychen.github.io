@@ -76,6 +76,9 @@
             </a>
         </div>
 
+        
+
+        
 
 
         <footer class="wave-container">
@@ -86,12 +89,31 @@
                 </path>
             </svg>
             <div class="wave-container-text blue-back" id="copyright">
-                <div>COPYRIGHT &copy; 2020</div>
-                <div>ANTON CHEN</div>
+                <div>Copyright &copy; 2020</div>
+                <div>Anton Chen</div>
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta@master/dist/vanta.net.min.js"></script>
+        <script>
+            VANTA.NET({
+                el: "#network",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 1000.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x1A1E2A,
+                backgroundColor: 0x11151F,
+                points: 8.00,
+                maxDistance: 25.00,
+                spacing: 16.00
+            })
+        </script>
     </body>
 
     </html>
