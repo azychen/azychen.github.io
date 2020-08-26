@@ -381,7 +381,7 @@ a:hover {
 
 .show-sections {
     margin-top: 150px;
-    /* margin-bottom: 150px; */
+    margin-bottom: -150px;
 }
 
 @media only screen and (max-width: 1128px) {
@@ -394,45 +394,45 @@ a:hover {
 
 #blob-projects {
     padding: 3em;
-    background-image: url(../assets/img/blob-gr1.svg);
+    background-image: url(../assets/img/blob-gr2.svg);
     background-repeat: no-repeat;
-    background-position-x: 0;
-    background-position-y: -30px;
-    background-size: 320px;
+    background-position-x: -10px;
+    background-position-y: -20px;
+    background-size: 350px;
 }
 
 #blob-projects:hover {
-    background-image: url(../assets/img/blob-gr1-h.svg);
+    background-image: url(../assets/img/blob-gr2-h.svg);
     background-repeat: no-repeat;
     color: #4bf;
 }
 
 #blob-about {
     padding: 3em;
-    background-image: url(../assets/img/blob-gr2.svg);
+    background-image: url(../assets/img/blob-gr3.svg);
     background-repeat: no-repeat;
-    background-position-x: -20px;
-    background-position-y: -50px;
-    background-size: 380px;
+    background-position-x: 0px;
+    background-position-y: -30px;
+    background-size: 320px;
 }
 
 #blob-about:hover {
-    background-image: url(../assets/img/blob-gr2-h.svg);
+    background-image: url(../assets/img/blob-gr3-h.svg);
     color: #abc;
     background-repeat: no-repeat;
 }
 
 #blob-contact {
     padding: 3em;
-    background-image: url(../assets/img/blob-gr3.svg);
+    background-image: url(../assets/img/blob-gr1.svg);
     background-repeat: no-repeat;
-    background-position-x: 20px;
-    background-position-y: -60px;
-    background-size: 320px;
+    background-position-x: -45px;
+    background-position-y: -50px;
+    background-size: 380px;
 }
 
 #blob-contact:hover {
-    background-image: url(../assets/img/blob-gr3-h.svg);
+    background-image: url(../assets/img/blob-gr1-h.svg);
     color: #f45;
     background-repeat: no-repeat;
 }
@@ -672,9 +672,10 @@ a:hover {
 #blob-email {
     background-image: url(../assets/img/logos/logo-em.svg), url(../assets/img/blob-gr3.svg);
     background-repeat: no-repeat;
+    background-size: auto, 225px;
     padding-bottom: 20%;
-    background-position-x: 50%, 3.5em;
-    background-position-y: 70%, 0;
+    background-position-x: 50%, 50px;
+    background-position-y: 70%, -48px;
 }
 
 #blob-email:hover {
@@ -685,8 +686,9 @@ a:hover {
 #blob-github {
     background-image: url(../assets/img/logos/logo-gh.svg), url(../assets/img/blob-gr2.svg);
     background-repeat: no-repeat;
-    background-position-x: 50%, 4em;
-    background-position-y: 70%, 0.5em;
+    background-size: auto, 250px;
+    background-position-x: 50%, 30px;
+    background-position-y: 70%, -40px;
     padding-bottom: 20%;
 }
 
@@ -713,8 +715,9 @@ a:hover {
 #blob-linkedin {
     background-image: url(../assets/img/logos/logo-li.svg), url(../assets/img/blob-gr1.svg);
     background-repeat: no-repeat;
-    background-position-x: 50%, 5em;
-    background-position-y: 70%, -1em;
+    background-size: auto, 250px;
+    background-position-x: 50%, 30px;
+    background-position-y: 70%, -30px;
     padding-bottom: 20%;
 }
 
